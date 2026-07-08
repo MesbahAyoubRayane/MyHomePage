@@ -4,55 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Home Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+      defer
+    ></script>
   </head>
-  <body>
-    <div class="hero">
-      <div class="personal-img">
-        <img src="./assets/images/person-1.jpg" alt="" width="400" />
-        <div>Ayoub Rayane</div>
-      </div>
-      <div class="about-me">
-        <div class="links">
-          <!-- discord -->
+
+  <body class="">
+    <div
+      class="absolute top-0 bg-blue-300 w-[200vw] h-130 origin-bottom-left -rotate-30"
+    ></div>
+    <div
+      class="z-10 grid gap-y-3 my-10 sm:gap-y-5 justify-center items-center max-w-[80vw] mx-auto lg:grid-cols-2 lg:gap-10"
+    >
+      <!-- Personal Image -->
+      <div class="relative flex flex-col items-center mx-auto">
+        <img
+          src="./assets/images/person-1.jpg"
+          class="rounded-t-full max-h-140"
+        />
+
+        <div
+          class="absolute font-bold text-xl sm:text-2xl md:text-3xl text-white bottom-[5%] left-[5%]"
+        >
+          MESBAH <br />
+          Ayoub Rayane
         </div>
       </div>
-    </div>
-    <div class="projects">
-      My Work
-      <div class="project-cards">
-        <div class="project-card">
-          <div class="project-screenshot"></div>
-          <div class="project-header">
-            <div class="project-name">Project Name</div>
-            <div class="project-links">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
-              molestiae!
-            </div>
-          </div>
+
+      <!-- About -->
+      <div
+        class="max-w-150 flex flex-col items-center gap-5 bg-white lg:p-10 lg:gap-10 lg:shadow-xl lg:rounded-2xl lg:translate-y-10"
+      >
+        <div class="text-2xl lg:text-4xl">About me</div>
+
+        <div class="">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+          quibusdam minima quasi amet in nam labore, recusandae hic quae qui
+          consequatur earum voluptatibus totam atque placeat corrupti pariatur
+          reiciendis commodi natus laborum distinctio obcaecati. Fugiat,
+          accusantium! Incidunt numquam amet quam labore, repellendus id
+          facilis, nulla nostrum deserunt laboriosam necessitatibus. Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Suscipit repellat
+          mollitia accusantium, ipsam quam voluptates facilis odit reiciendis
+          fugit vero pariatur exercitationem aliquid quas autem numquam nulla
+          dolore quos saepe?
+        </div>
+
+        <div class="flex justify-center gap-5">
+          <a href="">
+            <img
+              src="/assets/icons/github.png"
+              class="w-8 cursor-pointer hover:scale-105"
+            />
+          </a>
+
+          <a href="">
+            <img
+              src="/assets/icons/linkedin.png"
+              class="w-8 cursor-pointer hover:scale-105"
+            />
+          </a>
+
+          <a href="">
+            <img
+              src="/assets/icons/twitter.png"
+              class="w-8 cursor-pointer hover:scale-105"
+            />
+          </a>
         </div>
       </div>
-    </div>
-    <div class="contact-me">
-      <div>Contact Me</div>
-      <p>
-        Please get in touch if you think our work could be mutually beneficial!
-      </p>
-      <address>
-        <div>1234 Random Road</div>
-        <div>Random Town, Algeria 12345</div>
-      </address>
-
-      <a href="tel:+21312-345-6789">0123456789</a>
-      <a href="email:hello@hello.com">hello@hello.com</a>
-
-      <div class="links">
-        <a href="">Github</a>
-        <a href="">Linkedin</a>
-        <a href="">Twitter</a>
-      </div>
-
-      <img src="./assets/images/person-2.jpg" alt="" width="400" />
     </div>
   </body>
 </html>
